@@ -1,0 +1,64 @@
+/*
+    DragonRL PS5 Skin
+    Gamepad Viewer Custom CSS
+*/
+
+/* Custom controller artwork */
+.controller.ds5 {
+    background-image: url("C:/Users/Dereck/Desktop/DragonRL.png");
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+}
+
+/* Hide default Gamepad Viewer controller shell */
+.controller.ds5 .base {
+    opacity: 0 !important;
+}
+
+/* Keep interactive elements visible */
+.controller.ds5 .button,
+.controller.ds5 .stick,
+.controller.ds5 .trigger,
+.controller.ds5 .dpad,
+.controller.ds5 .touchpad,
+.controller.ds5 .start,
+.controller.ds5 .back,
+.controller.ds5 .meta {
+    opacity: 1 !important;
+}
+
+/* Face buttons */
+.controller.ds5 .button.pressed {
+    filter: brightness(1.45);
+}
+
+/* D-Pad */
+.controller.ds5 .dpad .pressed {
+    filter: brightness(1.45);
+}
+
+/* Analog sticks */
+.controller.ds5 .stick.pressed {
+    transform: scale(0.95);
+}
+
+/* Triggers */
+.controller.ds5 .trigger.pressed {
+    filter: brightness(1.35);
+}
+
+/* Touchpad */
+.controller.ds5 .touchpad.pressed {
+    filter: brightness(1.25);
+}
+
+/* PS button */
+.controller.ds5 .meta.pressed {
+    filter: brightness(1.5);
+}
+
+/* Optional: smoother animations */
+.controller.ds5 * {
+    transition: filter .08s ease, transform .08s ease;
+}
