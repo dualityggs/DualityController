@@ -1,97 +1,64 @@
 /*
- Duality PS5 Controller Skin
- Gamepad Viewer PS5 Styling
+    DragonRL PS5 Skin
+    Gamepad Viewer Custom CSS
 */
 
-/* BEGIN PS5 Controller Styling */
-
+/* Custom controller artwork */
 .controller.ds5 {
-    background-image: url("https://raw.githubusercontent.com/dualityggs/DualityController/main/DragonRL.png") !important;
+    background-image: url("images/DragonRL.png") !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: contain !important;
 }
 
-/* Hide default PS5 shell */
-
-/* Controller disconnected */
-.ds5.disconnected div {
-    display: none;
+/* Hide default Gamepad Viewer controller shell */
+.controller.ds5 .base {
+    opacity: 0 !important;
 }
 
-/* Triggers */
-.ds5 .triggers {
-    position: absolute;
-    width: 598px;
-    height: 90px;
-    left: 299px;
-    top: 38px;
+/* Keep interactive elements visible */
+.controller.ds5 .button,
+.controller.ds5 .stick,
+.controller.ds5 .trigger,
+.controller.ds5 .dpad,
+.controller.ds5 .touchpad,
+.controller.ds5 .start,
+.controller.ds5 .back,
+.controller.ds5 .meta {
+    opacity: 1 !important;
 }
-
-.ds5 .trigger {
-    opacity: 0;
-}
-
-.ds5 .trigger.pressed {
-    opacity: 1;
-    filter: brightness(1.4);
-}
-
-
-/* Bumpers */
-.ds5 .bumper {
-    opacity: 0;
-}
-
-.ds5 .bumper.pressed {
-    opacity: 1;
-    filter: brightness(1.4);
-}
-
-
-/* Touchpad */
-.ds5 .touchpad.pressed {
-    filter: brightness(1.3);
-}
-
-
-/* PS Button */
-.ds5 .meta.pressed {
-    filter: brightness(1.5);
-}
-
-
-/* Start / Options buttons */
-.ds5 .back.pressed,
-.ds5 .start.pressed {
-    filter: brightness(1.4);
-}
-
 
 /* Face buttons */
-.ds5 .button.pressed {
-    filter: brightness(1.5);
+.controller.ds5 .button.pressed {
+    filter: brightness(1.45);
+}
+
+/* D-Pad */
+.controller.ds5 .dpad .pressed {
+    filter: brightness(1.45);
+}
+
+/* Analog sticks */
+.controller.ds5 .stick.pressed {
     transform: scale(0.95);
 }
 
+/* Triggers */
+.controller.ds5 .trigger.pressed {
+    filter: brightness(1.35);
+}
 
-/* D-Pad */
-.ds5 .face.pressed {
+/* Touchpad */
+.controller.ds5 .touchpad.pressed {
+    filter: brightness(1.25);
+}
+
+/* PS button */
+.controller.ds5 .meta.pressed {
     filter: brightness(1.5);
 }
 
-
-/* Analog sticks */
-.ds5 .stick.pressed {
-    transform: scale(0.92);
+/* Optional: smoother animations */
+.controller.ds5 * {
+    transition: filter .08s ease, transform .08s ease;
 }
-
-
-/* Smooth animations */
-.ds5 * {
-    transition:
-        filter .08s ease,
-        transform .08s ease;
-}
-
-/* END PS5 Controller Styling */
