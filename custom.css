@@ -10,15 +10,9 @@
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: contain !important;
-
-    width: 1200px;
-    height: 700px;
 }
 
 /* Hide default PS5 shell */
-.ds5 .base {
-    opacity: 0 !important;
-}
 
 /* Controller disconnected */
 .ds5.disconnected div {
