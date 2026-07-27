@@ -5,7 +5,7 @@
 
 /* Custom controller artwork */
 .controller.ds5 {
-    background-image: url("C:/Users/Dereck/Desktop/DragonRL.png");
+    background-image: url("DragonRL.png") !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: contain !important;
