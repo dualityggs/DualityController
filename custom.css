@@ -5,7 +5,7 @@
 
 /* Custom controller artwork */
 .controller.ds5 {
-    background-image: url("DragonRL.png") !important;
+    background-image: url("https://github.com/dualityggs/DualityController/blob/main/DragonRL.png") !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: contain !important;
